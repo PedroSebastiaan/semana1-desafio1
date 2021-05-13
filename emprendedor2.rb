@@ -30,5 +30,5 @@ if margin > 0
     utilities = margin - (margin*0.35)
     puts "La utilidad de su operación es de #{utilities} clp."
 else
-    puts "Usted no genero ninguna utilidad."
+    puts "Usted no generó ninguna utilidad."
 end
