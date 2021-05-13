@@ -13,8 +13,8 @@ premiumusers = nil
 premiumusers = ARGV[2].to_i
 
 #Fourth entry
-freelusers = nil
-freelusers = ARGV[3].to_i
+freeusers = nil
+freeusers = ARGV[3].to_i
 
 #Fifth entry
 outlay = nil
@@ -22,7 +22,7 @@ outlay = ARGV[4].to_i
 
 #Margin
 margin = nil
-margin = (price * 2 * premiumusers) - outlay
+margin = ((price * 2 * premiumusers) + (price * (totalusers - (premiumusers + freeusers)))) - outlay
 
 #Utilities
 utilities = nil
